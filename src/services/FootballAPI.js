@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { displayingLeagues } from '../redux/Homepage.js/League';
+import { displayingLeagues } from '../redux/Homepage/League';
 
 const getLeagues = () => async (dispatch) => {
   axios.get('https://api-football-standings.azharimm.site/leagues')
