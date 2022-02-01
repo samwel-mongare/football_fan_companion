@@ -1,29 +1,33 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
 import Details from './components/Details';
 import Homepage from './components/Homepage';
+import store from './redux/configureStore';
 
 function App() {
   return (
-    <div className="App w-full h-screen bg-yellow-700">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Homepage />
+    <main className="App">
+      <Provider store={store}>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Homepage />
     }
-          />
-          <Route
-            path="/details"
-            element={
-              <Details />
+            />
+            <Route
+              path="/details"
+              element={
+                <Details />
     }
-          />
-        </Routes>
-      </BrowserRouter>
-    </div>
+            />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
+    </main>
   );
 }
 
