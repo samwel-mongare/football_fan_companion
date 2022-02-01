@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import getLeagues from '../services/FootballAPI';
+import { getLeagues } from '../services/FootballAPI';
 import League from './League';
 
 const Homepage = (() => {
