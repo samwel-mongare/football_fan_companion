@@ -24,12 +24,6 @@ export const getLeagueDetails = (id) => async (dispatch) => {
   axios.get(`${BASE_URL}/${id}/standings?season=2021&sort=asc`)
     .then((response) => {
       const leagueDetailss = response.data.data;
-      // const mappedLeagueDetails = Object.entries(leagueDetailss.standings).map(([id, standing]) => {
-      //   const { team, stats } = standing;
-      //   return {
-      //     id, team, stats,
-      //   };
-      // });
       dispatch(leagueDetails(leagueDetailss));
     });
 };

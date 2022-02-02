@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import Teamstats from './Teamstats';
 
 const Details = (() => {
   const stats = useSelector((state) => state.details);
@@ -9,12 +10,10 @@ const Details = (() => {
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
           <div className="overflow-x-auto">
+            <h2>{stats.leagueName}</h2>
             <table className="min-w-full">
               <thead className="border-b">
                 <tr>
-                  <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                    Rank
-                  </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                     Team Name
                   </th>
@@ -22,53 +21,39 @@ const Details = (() => {
                     Wins
                   </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                    Draws
-                  </th>
-                  <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                     Losses
                   </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                    Games Played
+                    Draws
                   </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                    Goals For
+                    Games Plyd
                   </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                    Goals Against
+                    Points For
+                  </th>
+                  <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Points Agst
                   </th>
                   <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                     Points
                   </th>
+                  <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Rank
+                  </th>
+                  <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Point Diff
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Cell
-                  </td>
-                </tr>
+                {stats.leagueStanding.map((data) => (
+                  <Teamstats
+                    key={data.id}
+                    stats={data.stats}
+                    teamName={data.clubName}
+                  />
+                ))}
               </tbody>
             </table>
           </div>
