@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCog, FaMicrophone, FaAlignJustify } from 'react-icons/fa';
+import logo from '../assets/football.png';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,11 +9,9 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 flex flex-wrap items-center justify-between px-2 py-3 bg-gray-300 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
-              href="/"
-            >
-              Football Fan Companion
+            <a href="/" className="flex items-center gap-4">
+              <img src={logo} alt="A football icon" style={{ width: '2rem', height: '2rem' }} />
+              <h1 className="text-2xl font-semibold">Football Fan Companion</h1>
             </a>
             <button
               className="text-black cursor-pointer text-xl leading-none px-3 py-1 border
