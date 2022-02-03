@@ -1,8 +1,15 @@
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import Teamstats from './Teamstats';
 
 const Details = (() => {
   const stats = useSelector((state) => state.details);
+  const navigate = useNavigate();
+
+  const goBack = (() => {
+    navigate('/');
+  });
 
   console.log(stats);
   return (
@@ -10,7 +17,19 @@ const Details = (() => {
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
           <div className="overflow-x-auto">
-            <h2>{stats.leagueName}</h2>
+            <div className="flex justify-between ml-10 mr-10">
+              <button type="button" onClick={goBack}>
+                <FaArrowLeft className="text-lg leading-lg text-black opacity-75" />
+              </button>
+              <h2>
+                League: &nbsp;
+                <b>{stats.leagueName}</b>
+              </h2>
+              <span>
+                Season:&nbsp;
+                <b>{stats.season}</b>
+              </span>
+            </div>
             <table className="min-w-full">
               <thead className="border-b">
                 <tr>

@@ -25,7 +25,7 @@ const Homepage = (() => {
 
   return (
     <>
-      <div className="max-w-10 flex items-center justify-center mt-5">
+      <div className="max-w-10 flex items-center justify-center mt-5 sticky top-20 z-50">
         <input type="text" className="px-2 py-2 max-w-10 h-7 border" placeholder="Search..." onChange={searchText} value={filter} />
       </div>
       <ul className="grid gap-3.5 m-5 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2">
