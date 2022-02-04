@@ -17,7 +17,7 @@ const League = ((props) => {
     <li className="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-300 dark:border-gray-700">
       <div className="p-5 flex flex-col" id={data.idx}>
         <button type="button" onClick={moreDetails} id={data.idx} className="ml-2 -mr-1 self-end flex  flex-col">
-          <FaArrowRight className="text-lg leading-lg text-black opacity-75" />
+          <FaArrowRight className="text-lg leading-lg text-black opacity-75 mr-5" />
         </button>
         <div>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{data.name}</h5>
