@@ -29,6 +29,7 @@ const Navbar = () => {
                 navbarOpen ? ' flex' : ' hidden'}`
             }
             id="example-navbar-danger"
+            data-testid="hamburger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
