@@ -13,7 +13,8 @@ Additional description about the project and its features.
 
 ## Live App Link
 
-[Heroku Live App](https://football-fan-companion.herokuapp.com/)
+[Heroku Live View](https://football-fan-companion.herokuapp.com/)
+[Netlify Live View](https://football-fan-companion.netlify.app)
 
 ## App Features Presentation
 
