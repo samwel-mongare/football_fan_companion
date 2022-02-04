@@ -3,7 +3,7 @@ import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import { Provider } from 'react-redux';
-import store from '../Redux/configureStore';
+import store from '../Redux/configureStore.js';
 import App from '../App';
 
 let appContainer = null;
