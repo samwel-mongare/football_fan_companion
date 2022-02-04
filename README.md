@@ -1,6 +1,8 @@
 # FOOTBALL FAN COMPANION APP
 
-> This is the third capstone project
+> Football Fan Companion is an applications that presents the user with different leagues on the homepage where he/she/they can choose a league to view its team's data.
+> The app was developed from a football api which presents team data filtered from a given league and the general league table that is generated from the data.
+> I felt that the project would be a good addition to the football world given I am a big fan of the sport and I am always in need of an updates on the progress of the leagues I am interested in.
 
 ## Project screenshots
 
@@ -12,6 +14,10 @@ Additional description about the project and its features.
 ## Live App Link
 
 [Heroku Live App](https://football-fan-companion.herokuapp.com/)
+
+## App Features Presentation
+
+[App Features Presentation by Mongare](https://www.loom.com/share/1de237d8e1fb40e89a94640b87545e99)
 
 ## Built With
 
