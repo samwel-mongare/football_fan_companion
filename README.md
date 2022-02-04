@@ -5,27 +5,29 @@
 ## Project screenshots
 
 ![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot2.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
 - HTML
-- CSS
+- TAILWIND CSS
 - JAVASCRIPT
 - REACT
 - REDUX
+- JEST TESTING
 
 ### Using it Locally
 
-- Clone the project from GitHub [here](https://github.com/Mosams/bookstore.git)
+- Clone the project from GitHub [here](https://github.com/Mosams/football_fan_companion.git)
 - Run the following commands as listed in your terminal:
 - `npm install`
 - `npm start`
 
 ## How to Setup
 
-> You can simply clone or download [this repository](https://github.com/Mosams/bookstore.git), and use your favorite browser or code editor to run this program.
+> You can simply clone or download [this repository](https://github.com/Mosams/football_fan_companion.git), and use your favorite browser or code editor to run this program.
 
 - To open the project after download, simply double click the index.html file
 
@@ -33,7 +35,7 @@ Additional description about the project and its features.
   > in your cmd or command line navigate to where this project is located, then;
 
 ```cmd
-cd bookstore
+cd football_fan_companion
 ```
 
 > thereafter run
@@ -44,11 +46,17 @@ code .
 
 ## Authors
 
-👤 **Author**
+👤 **Mongare S.**
 
 - GitHub: [@githubhandle](https://github.com/Mosams/)
 - Twitter: [@twitterhandle](https://twitter.com/sam_mongare)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sammy-mongare-b8288310b/)
+
+## Acknowledgements
+
+- Special thanks to the [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance for the design used in the project.
+- I also acknowledge the [Creative Commons Community](https://creativecommons.org/)
+- Sincere gratitute to the Microverse team and community for the help during development
 
 ## 🤝 Contributing
 
