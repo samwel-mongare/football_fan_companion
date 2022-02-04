@@ -9,6 +9,10 @@
 
 Additional description about the project and its features.
 
+## Live App Link
+
+[Heroku Live App](https://football-fan-companion.herokuapp.com/)
+
 ## Built With
 
 - HTML
