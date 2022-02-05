@@ -16,10 +16,6 @@ Additional description about the project and its features.
 [Heroku Live View](https://football-fan-companion.herokuapp.com/)
 [Netlify Live View](https://football-fan-companion.netlify.app)
 
-## App Features Presentation
-
-[App Features Presentation by Mongare](https://www.loom.com/share/1de237d8e1fb40e89a94640b87545e99)
-
 ## Built With
 
 - HTML
